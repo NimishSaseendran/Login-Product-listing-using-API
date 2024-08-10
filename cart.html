@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9.4.1/swiper-bundle.min.css" />
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="container mt-3 mb-4 d-flex justify-content-between align-items-center">
+            <div class="h-s d-flex w-25 justify-content-around">
+                <p><i class="fa-solid fa-magnifying-glass pe-2" style="color: #000000;"></i>Search</p>
+                <p><i class="fa-solid fa-location-dot pe-2" style="color: #000000;"></i>Find in stores</p>
+            </div>
+            <div class="w-50 text-center">
+                <h2 class="fw-semibold">Product Shopping</h2>
+            </div>
+            <div class="h-s d-flex justify-content-around w-25">
+                <p><i class="fa-solid fa-circle-user pe-2" style="color: #000000;"></i>My Account</p>
+                <p><i class="fa-solid fa-cart-shopping pe-2" style="color: #000000;"></i>Cart (0)</p>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="d-flex justify-content-around fw-semibold list-unstyled">
+                <li>All Collection</li>
+                <li>Best Seller</li>
+                <li>Top Offer</li>
+                <li>Category</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <hr>
+    </header>
+
+    <main>
+        <div class="container my-4">
+            <select id="categoryFilter" class="form-select">
+            </select>
+        </div>
+        <section id="productList" class="d-flex flex-wrap container">
+            <!-- Product List -->
+        </section>
+
+        <section class="container d-flex flex-wrap mt-5">
+            <div class="employee-content">
+                <h1 class="emp">Employees<i class="fa-solid fa-angle-right ms-3" style="color: #a1a1a1;"></i></h1>
+                <p class="fw-medium">Note: Images available in dummyjson are shown below along with their full name, job role, state and country</p>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Swiper slides -->
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center">
+        <!-- Grid container -->
+        <div class="container pt-4">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              data-mdb-ripple-init
+              class="btn btn-link btn-floating btn-lg text-body m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a
+              data-mdb-ripple-init
+              class="btn btn-link btn-floating btn-lg text-body m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a
+              data-mdb-ripple-init
+              class="btn btn-link btn-floating btn-lg text-body m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a
+              data-mdb-ripple-init
+              class="btn btn-link btn-floating btn-lg text-body m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a
+              data-mdb-ripple-init
+              class="btn btn-link btn-floating btn-lg text-body m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <!-- Github -->
+            <a
+              data-mdb-ripple-init
+              class="btn btn-link btn-floating btn-lg text-body m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2024 Copyright
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9.4.1/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./cartScript.js"></script>
+</body>
+</html>

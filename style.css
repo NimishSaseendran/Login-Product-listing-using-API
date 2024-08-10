@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.login h1 {
+    text-shadow: 2px 2px 8px #000000;
+}
+
+.login p{
+    letter-spacing: 1px;
+}
+
+header .container li, h2, p{
+    cursor: pointer;
+}
+
+header .container p:hover, li:hover{
+    color: purple;
+    background-color: rgba(173, 216, 230, 0.196);
+    transform: scale(1.1);
+}
+
+main{
+    background-color: rgb(228, 228, 228);
+}
+
+.card{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.card-body span {
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.employee-content p{
+    letter-spacing: 1px;
+    opacity: 0.5;
+    font-family: "Rajdhani", sans-serif;
+}
+.employee-content p:hover{
+    opacity: 1;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.card img:hover{
+    transform: scale(.9);
+}
+
+.swiper-wrapper {
+    height: 60vh;
+}
+
+.emp{
+    letter-spacing: 2px;
+    font-family: "Libre Baskerville", serif;
+}
+
+.item-title{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.item-description{
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    font-size: large;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+footer{
+    background-color: lightgray;
+}
+
+@media screen and (max-width:480px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .h-s{
+        flex-direction: column;
+        font-size: small;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+    .button-buy{
+        flex-direction: column;
+    }
+    #productList{
+        flex-direction: column;
+    }
+    .item-description{
+        -webkit-line-clamp: 2;
+    }
+    .item-title{
+        font-weight: 500;
+    }
+    .card-text{
+        padding: 0 5%;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:768px) {
+    .h-s{
+        flex-direction: column;
+        font-size: medium;
+    }
+}
